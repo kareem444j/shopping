@@ -1,0 +1,406 @@
+@import url("https://use.typekit.net/coa5bcp.css");
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 200, 'opsz' 48
+}
+
+* {
+    font-family: poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+/*start header*/
+
+header {
+    background-color: #f0f0f0;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 999;
+    align-items: center;
+    padding: 5px 200px;
+    box-shadow: 0 5px 20px gray;
+}
+
+.logo {
+    width: 60px;
+    mix-blend-mode: multiply;
+    padding: 0;
+    font-size: 1.8em;
+}
+
+.navigation a {
+    font-size: 1.1em;
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 30px;
+    color: blue;
+}
+
+.navigation a:hover {
+    color: #814ef7;
+}
+
+
+/*end header*/
+
+
+/*start shop more..........*/
+
+.more {
+    display: none;
+}
+
+.onmore {
+    width: 200px;
+    z-index: 999;
+    position: absolute;
+    top: 78px;
+    right: 450px;
+    transition: 0.4s;
+    display: unset;
+    position: fixed;
+}
+
+.onmore ul {
+    list-style-type: none;
+    background-color: #f0f0f0;
+    transition: 0.4s;
+    border-radius: 5px;
+    box-shadow: 0 3px 15px gray;
+}
+
+.onmore li {
+    color: black;
+    padding: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.a-icon2 {
+    text-decoration: none;
+    color: black;
+}
+
+.onmore li:hover {
+    background-color: gray;
+    padding-left: 40px;
+    color: #fff;
+}
+
+
+/*end start shop more..........*/
+
+section {
+    padding: 10px 200px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(background-img.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h2 {
+    font-weight: 600;
+    font-size: 1.6em;
+    color: rgb(235, 235, 240);
+}
+
+.main h2 span {
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 30px;
+    color: blue;
+    font-size: 3em;
+}
+
+.main h3 {
+    font-weight: 700;
+    font-size: 2em;
+    color: rgb(228, 228, 241);
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.main-btn {
+    text-decoration: none;
+    font-size: 1.4em;
+    display: inline-block;
+    font-weight: 700;
+    padding: 0.9375em 2.1875em;
+    background-color: #144eee;
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover {
+    transform: scale(1.1);
+    background-color: blue;
+}
+
+.social-icons a {
+    color: #fff;
+    margin-right: 20px;
+    font-size: 1.7em;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 2.2em;
+    font-weight: 800;
+    color: #3a6cf4;
+    margin-bottom: 40px;
+    margin-top: 100px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    color: #3a6cf4;
+    text-align: center;
+    font-size: 8em;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    font-size: 1.2em;
+    color: #3a6cf4;
+    font-weight: 700;
+    margin: 20px;
+}
+
+.info p {
+    font-size: 1em;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin: 20px;
+}
+
+.cards {
+    margin-bottom: 200px;
+}
+
+.show-more {
+    text-decoration: none;
+    font-size: 1em;
+    display: inline-block;
+    font-weight: 700;
+    padding: 0.9375em 2.1875em;
+    background-color: #144eee;
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+
+.show-more:hover {
+    transform: scale(1.1);
+    background-color: blue;
+}
+
+
+/*scrol-top*/
+
+.scrol-top {
+    z-index: 999;
+    font-size: 3em;
+    right: 10px;
+    position: absolute;
+    top: 700px;
+    right: 30px;
+    display: flex;
+    position: fixed;
+}
+
+
+/*end scrol-top*/
+
+.cards-contact {
+    background-color: rgb(49, 153, 212);
+    padding-bottom: 170px;
+    padding-top: 50px;
+}
+
+.title2 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.2em;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 40px;
+    margin-top: 100px;
+}
+
+.content .icon {
+    font-size: 4.5em;
+}
+
+.content .info .h3h {
+    color: black;
+    font-size: 1.5em;
+}
+
+.content .info .p2 {
+    font-size: 1.3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navigation2 {
+    display: none;
+    font-size: 40px;
+}
+
+.navigation22 {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#content-on {
+    display: none;
+}
+
+#about-on {
+    display: none;
+}
+
+
+/*.................start media screen............*/
+
+
+/*larg screen*/
+
+@media (max-width: 1023px) {
+    .navigation {
+        display: none;
+    }
+    .navigation23 {
+        display: unset;
+        font-size: 40px;
+    }
+    #content-on {
+        display: unset;
+    }
+    #about-on {
+        display: unset;
+    }
+    header {
+        padding: 12px 20px;
+    }
+    .navigation2 {
+        display: unset;
+    }
+    .title {
+        font-size: 1.8em;
+    }
+    section {
+        padding: 80px 20px;
+    }
+    .main h2 {
+        font-size: 1.5em;
+    }
+    .main h3 {
+        font-size: 1.6em;
+    }
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main .social-icons a {
+        color: black;
+    }
+    .onmore {
+        position: fixed;
+        top: 90px;
+        right: 10px;
+    }
+}
+
+@media (max-width:641px) {
+    body {
+        font-size: 12px;
+    }
+    .main h2 {
+        font-size: 0.8em;
+    }
+    .main h3 {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 300px) {
+    bpdy {
+        font-size: 10px;
+    }
+}
+
+
+/*.................end media screen............*/
+
+
+/*.............start footer............*/
+
+.footer {
+    background-color: #000016;
+    padding: 2em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer p {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.footer span a {
+    color: #3a6cf4;
+}
+
+.footer .social-icons a {
+    font-size: 1.2em;
+}
+
+
+/*.............end footer............*/

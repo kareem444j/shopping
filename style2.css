@@ -1,0 +1,75 @@
+@import url("https://use.typekit.net/coa5bcp.css");
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 200, 'opsz' 48
+}
+
+* {
+    font-family: poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #f0f0f0;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 999;
+    align-items: center;
+    padding: 5px 200px;
+}
+
+.logo {
+    width: 60px;
+    mix-blend-mode: multiply;
+    padding: 0;
+    font-size: 1.8em;
+}
+
+.navigation a {
+    font-size: 1.1em;
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 30px;
+    color: blue;
+}
+
+.navigation a:hover {
+    color: #814ef7;
+}
+
+section {
+    padding: 10px 200px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+
+/*..........*/
+
+.more {
+    background-color: grey;
+    width: 200px;
+    height: 200px;
+    z-index: 999;
+    position: absolute;
+    top: 500px;
+}
+
+.more ul {
+    list-style-type: none;
+    background-color: grey;
+}
+
+.more li {
+    color: #f0f0f0;
+    padding: 20px;
+}
