@@ -15,18 +15,23 @@
 </head>
 
 <body>
-    <header>
-        <a href="#" class="logo"><img class="logo" src="Blue PNG.png" alt="logo"></a>
+    <header id="header2">
+        <a id="logo1" href="index.html" class="logo1">
+            <h1>AN</h1>
+        </a>
+        <a id="logo2" href="index.html" class="but-of">
+            <h1>AN</h1>
+        </a>
+
+
         <nav class="navigation">
+            <a class="but-on" id="butdark" onclick="butdark()" href="#">Dark  <i class="fa-solid fa-toggle-off"></i></a>
+            <a class="but-of" id="butwhite" onclick="butwhite()" href="#">White  <i class="fa-solid fa-toggle-on"></i></a>
 
             <a href="#Shop" class="shop" id="but1" onclick="but1()">
-                <i class="fa-solid fa-cart-shopping"></i> Shop <span class="material-symbols-outlined">
-                expand_more
-                </span></a>
+                <i class="fa-solid fa-cart-shopping"></i> Shop <i class="fa-solid fa-caret-down"></i></a>
             <a href="#Shop" class="more" id="but2" onclick="but2()">
-                <i class="fa-solid fa-cart-shopping"></i> Shop <span class="material-symbols-outlined">
-                    expand_more
-                    </span></a>
+                <i class="fa-solid fa-cart-shopping"></i> Shop <i class="fa-solid fa-caret-up"></i></a>
             <a href="#contact" class="contact"><i class="fa-solid fa-headset"></i> Contact</a>
             <a href="#services" class="services"><i class="fa-solid fa-address-card"></i> About</a>
         </nav>
@@ -39,26 +44,26 @@
         </nav>
     </header>
     <div id="div3" class="more">
-        <ul>
+        <ul class="ul11" id="ul-dark">
 
             <a class="a-icon2" href="#shop">
 
-                <li><i class="fa-solid fa-house-medical-flag"></i> Houseware</li>
+                <li class="li11" id="li-dark"><i class="fa-solid fa-house-medical-flag"></i> Houseware</li>
             </a>
             <a class="a-icon2" href="#shop">
-                <li><i class="fa-solid fa-robot"></i> Electronics</li>
+                <li class="li11" id="li-dark"><i class="fa-solid fa-robot"></i> Electronics</li>
             </a>
             <a class="a-icon2" href="#shop">
 
-                <li><i class="fa-solid fa-shirt"></i> Clothes</li>
+                <li class="li11" id="li-dark"><i class="fa-solid fa-shirt"></i> Clothes</li>
             </a>
             <a id="content-on" class="a-icon2" href="#contact">
 
-                <li> <i class="fa-solid fa-headset"></i> Contact</li>
+                <li class="li11" id="li-dark"> <i class="fa-solid fa-headset"></i> Contact</li>
             </a>
             <a id="about-on" class="a-icon2" href="#about">
 
-                <li><i class="fa-solid fa-address-card"></i> About</li>
+                <li class="li11" id="li-dark"><i class="fa-solid fa-address-card"></i> About</li>
             </a>
 
 
@@ -70,14 +75,14 @@
     <section class="main" id="main3">
         <div>
 
-            <h2>Welcom..,<br><span>Shopping</span></h2><br>
-            <h3>Shopping Now</h3>
-            <a href="#shop" class="main-btn">shop</a>
+            <h2 id="text">Welcom..,<br><span>Shopping</span></h2><br>
+            <h3 id="text2">Shopping Now</h3>
+            <a id="main-btn" href="#shop" class="main-btn">shop</a>
             <div class="social-icons">
-                <a href="#facebook"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#instagram"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#twitter"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#linkin"><i class="fa-brands fa-linkedin"></i></a>
+                <a id="adark" href="#facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a id="adark" href="#instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a id="adark" href="#twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a id="adark" href="#linkin"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
 
@@ -153,7 +158,7 @@
     <!--.............end footer............-->
 
     <footer class="footer">
-        <p>Copyrights @ <span><a href="https://nt2uyruqis93y6cywcgg5g.on.drv.tw/my/admin.html" target="_blank">Karem Magdy</a></span></p>
+        <p>Powered By @ <span><a href="https://nt2uyruqis93y6cywcgg5g.on.drv.tw/my/admin.html" target="_blank">Karem Magdy</a></span></p>
         <div class="social-icons">
             <a href="#facebook"><i class="fa-brands fa-facebook"></i></a>
             <a href="#instagram"><i class="fa-brands fa-instagram"></i></a>
@@ -194,6 +199,32 @@
             document.getElementById("but5").className = "more";
             document.getElementById("but4").className = "navigation2";
         }
+
+        //...............start dark mode.............
+
+        function butdark() {
+            document.getElementById('butdark').className = "but-of";
+            document.getElementById('butwhite').className = "but-on";
+            document.getElementById("header2").className = "header-dark";
+            document.getElementById("shop").className = "cards-dark";
+            document.getElementById("contact").className = "cards-contact-dark";
+            document.getElementById('main-btn').className = "main-btn-dark";
+            document.getElementById('logo1').className = "but-of";
+            document.getElementById('logo2').className = "logo2";
+        }
+
+        function butwhite() {
+            document.getElementById('butdark').className = "but-on"
+            document.getElementById('butwhite').className = "but-of"
+            document.getElementById("header2").className = "header";
+            document.getElementById("shop").className = "cards";
+            document.getElementById("contact").className = "cards-contact";
+            document.getElementById('main-btn').className = "main-btn";
+            document.getElementById('logo1').className = "logo1";
+            document.getElementById('logo2').className = "but-of";
+        }
+
+        //..................end dark mode............
     </script>
 
 </body>
